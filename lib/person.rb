@@ -1,5 +1,7 @@
 # your code goes here
 class Person
+	@@name
+
 	attr_reader :name, :happiness, :hygiene
 	attr_accessor :bank_account
 
@@ -10,9 +12,11 @@ class Person
 	@bank_account = 25
 	end 
 
-	def name
-	  @name
-	end
+	# moving name to the top
+
+	# def name
+	#   @name
+	# end
 
 	def happiness=(num)
 		@happiness = if num > 10 
